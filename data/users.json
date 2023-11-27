@@ -4,89 +4,80 @@
     "name": "Neil Sims",
     "avatar": "neil-sims.png",
     "email": "neil.sims@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Front-end developer",
-    "country": "United States",
-    "status": "Active"
+    "position": "Desarrollador Front-End",
+    "department": "Desarrollo",
+    "status": "Activo"
   },
   {
     "id": 2,
     "name": "Roberta Casas",
     "avatar": "roberta-casas.png",
     "email": "roberta.casas@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Designer",
-    "country": "Spain",
-    "status": "Active"
+    "position": "Diseñador",
+    "department": "Diseño",
+    "status": "Activo"
   },
   {
     "id": 3,
     "name": "Michael Gough",
     "avatar": "michael-gough.png",
     "email": "michael.gough@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "React developer",
-    "country": "United Kingdom",
-    "status": "Active"
+    "position": "Desarrollador React",
+    "department": "Desarrollo Web",
+    "status": "Activo"
   },
   {
     "id": 4,
     "name": "Jese Leos",
     "avatar": "jese-leos.png",
     "email": "jese.leos@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Marketing",
-    "country": "United States",
-    "status": "Active"
+    "position": "Mercadólogo",
+    "department": "Marketing",
+    "status": "Activo"
   },
   {
     "id": 5,
     "name": "Bonnie Green",
     "avatar": "bonnie-green.png",
     "email": "bonnie.green@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "UI/UX Engineer",
-    "country": "Australia",
-    "status": "Offline"
+    "position": "Ingeniero UI/UX",
+    "department": "Desarrollo",
+    "status": "Fuera de Línea"
   },
   {
     "id": 6,
     "name": "Thomas Lean",
     "avatar": "thomas-lean.png",
     "email": "thomas.lean@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Vue developer",
-    "country": "Germany",
-    "status": "Active"
+    "position": "Desarrollador Vue",
+    "department": "Desarrollo",
+    "status": "Activo"
   },
   {
     "id": 7,
     "name": "Helene Engels",
     "avatar": "helene-engels.png",
     "email": "helene.engels@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Product owner",
-    "country": "Canada",
-    "status": "Active"
+    "position": "Administrador de Base de Datos",
+    "department": "Infraestructura",
+    "status": "Activo"
   },
   {
     "id": 8,
     "name": "Lana Byrd",
     "avatar": "lana-byrd.png",
     "email": "lana.byrd@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Designer",
-    "country": "United States",
-    "status": "Active"
+    "position": "Diseñador",
+    "department": "Diseño",
+    "status": "Activo"
   },
   {
     "id": 9,
     "name": "Leslie Livingston",
     "avatar": "leslie-livingston.png",
     "email": "leslie.livingston@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Web developer",
-    "country": "France",
+    "position": "Desarrollador Web",
+    "department": "Desarrollo Web",
     "status": "Offline"
   },
   {
@@ -94,59 +85,53 @@
     "name": "Robert Brown",
     "avatar": "robert-brown.png",
     "email": "robert.brown@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Laravel developer",
-    "country": "Russia",
-    "status": "Active"
+    "position": "Analista de Base De Datos",
+    "department": "Infraestructura",
+    "status": "Activo"
   },
   {
     "id": 11,
     "name": "Neil Sims",
     "avatar": "neil-sims.png",
     "email": "neil.sims@flowbite.com",
-    "position": "Front-end developer",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "country": "United States",
-    "status": "Active"
+    "position": "Desarrollador Front-End",
+    "department": "Desarrollo Web",
+    "status": "Activo"
   },
   {
     "id": 12,
     "name": "Roberta Casas",
     "avatar": "roberta-casas.png",
     "email": "roberta.casas@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Designer",
-    "country": "Spain",
-    "status": "Active"
+    "position": "Project Managar",
+    "department": "Proyectos",
+    "status": "Activo"
   },
   {
     "id": 13,
     "name": "Michael Gough",
     "avatar": "michael-gough.png",
     "email": "michael.gough@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "React developer",
-    "country": "United Kingdom",
-    "status": "Active"
+    "position": "Desarrollador React",
+    "department": "Desarrollo Web",
+    "status": "Activo"
   },
   {
     "id": 14,
     "name": "Jese Leos",
     "avatar": "jese-leos.png",
     "email": "jese.leos@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Marketing",
-    "country": "United States",
-    "status": "Active"
+    "position": "Mercadólogo",
+    "department": "Marketing",
+    "status": "Activo"
   },
   {
     "id": 15,
     "name": "Bonnie Green",
     "avatar": "bonnie-green.png",
     "email": "bonnie.green@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "UI/UX Engineer",
-    "country": "Australia",
+    "position": "Ingeniero UI/UX",
+    "department": "Proyectos",
     "status": "Offline"
   },
   {
@@ -154,39 +139,35 @@
     "name": "Thomas Lean",
     "avatar": "thomas-lean.png",
     "email": "thomas.lean@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Vue developer",
-    "country": "Germany",
-    "status": "Active"
+    "position": "Desarrollador Vue",
+    "department": "Desarrollo",
+    "status": "Activo"
   },
   {
     "id": 17,
     "name": "Helene Engels",
     "avatar": "helene-engels.png",
     "email": "helene.engels@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Product owner",
-    "country": "Canada",
-    "status": "Active"
+    "position": "Administrador de Base de Datos",
+    "department": "Infraestructura",
+    "status": "Activo"
   },
   {
     "id": 18,
     "name": "Lana Byrd",
     "avatar": "lana-byrd.png",
     "email": "lana.byrd@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Designer",
-    "country": "United States",
-    "status": "Active"
+    "position": "Diseñador",
+    "department": "Diseño",
+    "status": "Activo"
   },
   {
     "id": 19,
     "name": "Leslie Livingston",
     "avatar": "leslie-livingston.png",
     "email": "leslie.livingston@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Web developer",
-    "country": "France",
+    "position": "Desarrollador Web",
+    "department": "Desarrollo Web",
     "status": "Offline"
   },
   {
@@ -194,9 +175,8 @@
     "name": "Robert Brown",
     "avatar": "robert-brown.png",
     "email": "robert.brown@flowbite.com",
-    "biography": "I love working with React and Flowbites to create efficient and user-friendly interfaces. In my spare time, I enjoys baking, hiking, and spending time with my family.",
-    "position": "Laravel developer",
-    "country": "Russia",
-    "status": "Active"
+    "position": "Desarrollador Laravel",
+    "department": "Desarrollo",
+    "status": "Activo"
   }
 ]
