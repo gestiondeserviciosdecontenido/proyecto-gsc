@@ -1,293 +1,487 @@
 ---
-title: Tailwind CSS Admin Dashboard - Flowbite
+title: RateMaster
 description: Get started with a free and open-source admin dashboard layout built with Tailwind CSS and Flowbite featuring charts, widgets, CRUD layouts, authentication pages, and more
 layout: dashboard
 footer: true
 ---
       <!-- Main widget -->
-      <div class="p-4 bg-white block sm:flex items-center justify-between border-b border-gray-200 lg:mt-1.5 dark:bg-gray-800 dark:border-gray-700">
-        <div class="w-full mb-1">
-            <div class="mb-4">
-                <nav class="flex mb-5" aria-label="Breadcrumb">
-                    <ol class="inline-flex items-center space-x-1 text-sm font-medium md:space-x-2">
-                      <li class="inline-flex items-center">
-                        <a href="#" class="inline-flex items-center text-gray-700 hover:text-primary-600 dark:text-gray-300 dark:hover:text-white">
-                          <svg class="w-5 h-5 mr-2.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
-                          Inicio
-                        </a>
-                      </li>
-                      <li>
-                        <div class="flex items-center">
-                          <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                          <a href="#" class="ml-1 text-gray-700 hover:text-primary-600 md:ml-2 dark:text-gray-300 dark:hover:text-white">Usuarios</a>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="flex items-center">
-                          <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                          <span class="ml-1 text-gray-400 md:ml-2 dark:text-gray-500" aria-current="page">Lista</span>
-                        </div>
-                      </li>
-                    </ol>
-                </nav>
-                <h1 class="text-xl font-semibold text-gray-900 sm:text-2xl dark:text-white">General</h1>
+      <div class="px-4 pt-6">
+        <div class="grid gap-4 xl:grid-cols-2 2xl:grid-cols-3">
+
+        </div>
+        <div class="grid w-full grid-cols-1 gap-4 mt-4 xl:grid-cols-2 2xl:grid-cols-2">
+          <div class="items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm sm:flex dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+            <div class="w-full">
+              <h3 class="text-base font-normal text-gray-500 dark:text-gray-400">Asociados</h3>
+              <span class="text-2xl font-bold leading-none text-gray-900 sm:text-3xl dark:text-white">2,340</span>
+              <p class="flex items-center text-base font-normal text-gray-500 dark:text-gray-400">
+                <span class="flex items-center mr-1.5 text-sm text-green-500 dark:text-green-400">
+                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path clip-rule="evenodd" fill-rule="evenodd" d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"></path>
+                  </svg>
+                  3,4% 
+                </span>
+            Desde el último mes
+              </p>
             </div>
-            <div class="sm:flex">
-                <div class="items-center hidden mb-3 sm:flex sm:divide-x sm:divide-gray-100 sm:mb-0 dark:divide-gray-700">
-                    <form class="lg:pr-3" action="#" method="GET">
-                    <label for="users-search" class="sr-only">Buscar</label>
-                    <div class="relative mt-1 lg:w-64 xl:w-96">
-                        <input type="text" name="email" id="users-search" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Buscar Usuario">
-                    </div>
-                    </form>
-                    <div class="flex pl-0 mt-3 space-x-1 sm:pl-2 sm:mt-0">
-                        <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path></svg>
-                        </a>
-                        <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
-                        </a>
-                        <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
-                        </a>
-                        <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg>
-                        </a>
-                    </div>
+            <div class="w-full" id="week-signups-chart"></div>
+          </div>
+          <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+            <div class="w-full">
+              <h3 class="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">Evaluaciones</h3>
+              <div class="flex items-center mb-2">
+                <div class="w-16 text-sm font-medium dark:text-white">5</div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div class="bg-primary-600 h-2.5 rounded-full dark:bg-primary-500" style="width: 18%"></div>
                 </div>
-                <div class="flex items-center ml-auto space-x-2 sm:space-x-3">
-                    <button type="button" data-modal-target="add-user-modal" data-modal-toggle="add-user-modal" class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                        <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
-                        Agregar Usuario
-                    </button>
-                    <a href="#" class="inline-flex items-center justify-center w-1/2 px-3 py-2 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-primary-300 sm:w-auto dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-                        <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"></path></svg>
-                        Exportar
+              </div>
+              <div class="flex items-center mb-2">
+                <div class="w-16 text-sm font-medium dark:text-white">4</div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div class="bg-primary-600 h-2.5 rounded-full dark:bg-primary-500" style="width: 15%"></div>
+                </div>
+              </div>
+              <div class="flex items-center mb-2">
+                <div class="w-16 text-sm font-medium dark:text-white">3</div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div class="bg-primary-600 h-2.5 rounded-full dark:bg-primary-500" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="flex items-center mb-2">
+                <div class="w-16 text-sm font-medium dark:text-white">2</div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div class="bg-primary-600 h-2.5 rounded-full dark:bg-primary-500" style="width: 30%"></div>
+                </div>
+              </div>
+            </div>
+            <div id="traffic-channels-chart" class="w-full"></div>
+          </div>
+        </div>
+        <!-- 2 columns -->
+        <div class="grid grid-cols-1 my-4 xl:grid-cols-2 xl:gap-4">
+          <!-- Activity Card -->
+          <div class="p-4 mb-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800 xl:mb-0">
+            <div class="flex items-center justify-between mb-4">
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Actividad Reciente</h3>
+              <a href="#" class="inline-flex items-center p-2 text-sm font-medium rounded-lg text-primary-700 hover:bg-gray-100 dark:text-primary-500 dark:hover:bg-gray-700">
+                Ver Todo
+              </a>
+            </div>
+            <ol class="relative border-l border-gray-200 dark:border-gray-700">                  
+              <li class="mb-10 ml-4">
+                  <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-800 dark:bg-gray-700"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Abril 2023</time>
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Entrenamiento de Nuevos Asociados</h3>
+                  <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">5 asociados nuevos para el cliente "x".</p>
+                  <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Ver más detalles.<svg class="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+              </li>
+              <li class="mb-10 ml-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-800 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Marzo 2023</time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Reforzarmiento de  Asociados</h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Capacitación de 5 asociados en nueva herramienta para el cliente "x".</p>
+                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Ver más detalles.<svg class="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+            </li>
+            <li class="mb-10 ml-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-800 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Febrero 2023</time>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Certificación de Entrenadores</h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Certificación de Entrenadores en nueva metodología.</p>
+                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Ver más detalles.<svg class="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></a>
+            </li>
+            </ol>
+          </div>
+          <!--Carousel widget -->
+          <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+            <div id="carousel" class="relative" data-carousel="">
+              <div class="relative mx-auto overflow-hidden h-[36rem] lg:h-[24rem]">
+                  <div class="hidden duration-700 ease-in-out bg-white dark:bg-gray-800" data-carousel-item> 
+                    <div class="flex items-center mb-4 text-lg font-medium text-primary-600">
+                      <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path clip-rule="evenodd" fill-rule="evenodd" d="M9.664 1.319a.75.75 0 01.672 0 41.059 41.059 0 018.198 5.424.75.75 0 01-.254 1.285 31.372 31.372 0 00-7.86 3.83.75.75 0 01-.84 0 31.508 31.508 0 00-2.08-1.287V9.394c0-.244.116-.463.302-.592a35.504 35.504 0 013.305-2.033.75.75 0 00-.714-1.319 37 37 0 00-3.446 2.12A2.216 2.216 0 006 9.393v.38a31.293 31.293 0 00-4.28-1.746.75.75 0 01-.254-1.285 41.059 41.059 0 018.198-5.424zM6 11.459a29.848 29.848 0 00-2.455-1.158 41.029 41.029 0 00-.39 3.114.75.75 0 00.419.74c.528.256 1.046.53 1.554.82-.21.324-.455.63-.739.914a.75.75 0 101.06 1.06c.37-.369.69-.77.96-1.193a26.61 26.61 0 013.095 2.348.75.75 0 00.992 0 26.547 26.547 0 015.93-3.95.75.75 0 00.42-.739 41.053 41.053 0 00-.39-3.114 29.925 29.925 0 00-5.199 2.801 2.25 2.25 0 01-2.514 0c-.41-.275-.826-.541-1.25-.797a6.985 6.985 0 01-1.084 3.45 26.503 26.503 0 00-1.281-.78A5.487 5.487 0 006 12v-.54z"></path>
+                      </svg>
+                      Consejos
+                    </div>
+                    <h3 class="mb-4 text-2xl font-medium text-gray-900 dark:text-white">Mantener una actitud positiva.</h3>
+                    <p class="mb-4 text-gray-500 dark:text-gray-400">Prepararse y organizarse con tiempo.</p>
+                    <p class="mb-2 text-lg font-medium text-gray-900 dark:text-white">Puntos Clave:</p>
+                    <ul class="pl-4 mb-4 space-y-3 text-gray-500 list-disc dark:text-gray-400">
+                      <li>El entrenamiento es más efectivo.</li>
+                      <li>Los asociados son más receptivos.</li>
+                      <li>La información se maneja más facil.</li>
+                      <li>El tiempo de entrenamiento se reduce.</li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center p-2 font-medium rounded-lg text-primary-700 hover:bg-gray-100 dark:text-primary-500 dark:hover:bg-gray-700">
+                      Ver más ...
+                      <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path clip-rule="evenodd" fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"></path>
+                      </svg>
                     </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="flex flex-col">
-        <div class="overflow-x-auto">
-            <div class="inline-block min-w-full align-middle">
-                <div class="overflow-hidden shadow">
-                    <table class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-600">
-                        <thead class="bg-gray-100 dark:bg-gray-700">
-                            <tr>
-                                <th scope="col" class="p-4">
-                                    <div class="flex items-center">
-                                        <input id="checkbox-all" aria-describedby="checkbox-1" type="checkbox" class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="checkbox-all" class="sr-only">checkbox</label>
-                                    </div>
-                                </th>
-                                <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
-                                    Nombre
-                                </th>
-                                <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
-                                    Puesto
-                                </th>
-                                <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
-                                    Departamento
-                                </th>
-                                <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
-                                    Estado
-                                </th>
-                                <th scope="col" class="p-4 text-xs font-medium text-left text-gray-500 uppercase dark:text-gray-400">
-                                    Acciones
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
-                            {{< users.inline >}}
-                            {{- range (index $.Site.Data "users") }}
-                            <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
-                                <td class="w-4 p-4">
-                                    <div class="flex items-center">
-                                        <input id="checkbox-{{ .id }}" aria-describedby="checkbox-1" type="checkbox" class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:focus:ring-primary-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600">
-                                        <label for="checkbox-{{ .id }}" class="sr-only">checkbox</label>
-                                    </div>
-                                </td>
-                                <td class="flex items-center p-4 mr-12 space-x-6 whitespace-nowrap">
-                                    <img class="w-10 h-10 rounded-full" src="/images/users/{{ .avatar }}" alt="{{ .name }} avatar">
-                                    <div class="text-sm font-normal text-gray-500 dark:text-gray-400">
-                                        <div class="text-base font-semibold text-gray-900 dark:text-white">{{ .name }}</div>
-                                        <div class="text-sm font-normal text-gray-500 dark:text-gray-400">{{ .email }}</div>
-                                    </div>
-                                </td>
-                                <td class="p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ .position }}</td>
-                                <td class="p-4 text-base font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ .department }}</td>
-                                <td class="p-4 text-base font-normal text-gray-900 whitespace-nowrap dark:text-white">
-                                    <div class="flex items-center">
-                                        {{ if eq .status "Activo" }} <div class="h-2.5 w-2.5 rounded-full bg-green-400 mr-2"></div> {{ else }} <div class="h-2.5 w-2.5 rounded-full bg-red-500 mr-2"></div> {{ end }} {{ .status }}
-                                    </div>
-                                </td>
-                                <td class="p-4 space-x-2 whitespace-nowrap">
-                                    <button type="button" data-modal-target="edit-user-modal" data-modal-toggle="edit-user-modal" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.414 2.586a2 2 0 00-2.828 0L7 10.172V13h2.828l7.586-7.586a2 2 0 000-2.828z"></path><path fill-rule="evenodd" d="M2 6a2 2 0 012-2h4a1 1 0 010 2H4v10h10v-4a1 1 0 112 0v4a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" clip-rule="evenodd"></path></svg>
-                                        Agregar Evaluación
-                                    </button>
-                                </td>
-                            </tr>
-                            {{ end -}}
-                            {{< /users.inline >}}
-                            
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="sticky bottom-0 right-0 items-center w-full p-4 bg-white border-t border-gray-200 sm:flex sm:justify-between dark:bg-gray-800 dark:border-gray-700">
-        <div class="flex items-center mb-4 sm:mb-0">
-            <a href="#" class="inline-flex justify-center p-1 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-            </a>
-            <a href="#" class="inline-flex justify-center p-1 mr-2 text-gray-500 rounded cursor-pointer hover:text-gray-900 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">
-                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-            </a>
-            <span class="text-sm font-normal text-gray-500 dark:text-gray-400">Mostrando <span class="font-semibold text-gray-900 dark:text-white">1-20</span> de <span class="font-semibold text-gray-900 dark:text-white">2290</span></span>
-        </div>
-        <div class="flex items-center space-x-3">
-            <a href="#" class="inline-flex items-center justify-center flex-1 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                <svg class="w-5 h-5 mr-1 -ml-1"" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-                Anterior
-            </a>
-            <a href="#" class="inline-flex items-center justify-center flex-1 px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                Siguiente
-                <svg class="w-5 h-5 ml-1 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-            </a>
-        </div>
-    </div>
-    
-    <!-- Edit User Modal -->
-    <div class="fixed left-0 right-0 z-50 items-center justify-center hidden overflow-x-hidden overflow-y-auto top-4 md:inset-0 h-modal sm:h-full" id="edit-user-modal">
-        <div class="relative w-full h-full max-w-2xl px-4 md:h-auto">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-800">
-                <!-- Modal header -->
-                <div class="flex items-start justify-between p-5 border-b rounded-t dark:border-gray-700">
-                    <h3 class="text-xl font-semibold dark:text-white">
-                        Edit user
-                    </h3>
-                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-700 dark:hover:text-white" data-modal-toggle="edit-user-modal">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
-                    </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-6 space-y-6">
-                    <form action="#">
-                        <div class="grid grid-cols-6 gap-6">
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
-                                <input type="text" name="first-name" value="Bonnie" id="first-name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Bonnie" required>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
-                                <input type="text" name="last-name" value="Green" id="last-name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Green" required>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-                                <input type="email" name="email" value="bonnie@flowbite.com" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="example@company.com" required>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="position" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Position</label>
-                                <input type="text" name="position" value="React Developer" id="position" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="e.g. React developer" required>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="current-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Current Password</label>
-                                <input type="password" name="current-password" value="••••••••" id="current-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="••••••••" required>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="new-password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">New Password</label>
-                                <input type="password" name="new-password" value="••••••••" id="new-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="••••••••" required>
-                            </div>
-                            <div class="col-span-6">
-                                <label for="biography" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Biography</label>
-                                <textarea id="biography" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="👨‍💻Full-stack web developer. Open-source contributor.">👨‍💻Full-stack web developer. Open-source contributor.</textarea>
-                            </div>
-                        </div> 
+                  </div>
+                  <div class="hidden duration-700 ease-in-out bg-white dark:bg-gray-800" data-carousel-item> 
+                    <div class="flex items-center mb-4 text-lg font-medium text-teal-500">
+                      <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path clip-rule="evenodd" fill-rule="evenodd" d="M4.606 12.97a.75.75 0 01-.134 1.051 2.494 2.494 0 00-.93 2.437 2.494 2.494 0 002.437-.93.75.75 0 111.186.918 3.995 3.995 0 01-4.482 1.332.75.75 0 01-.461-.461 3.994 3.994 0 011.332-4.482.75.75 0 011.052.134z"></path>
+                        <path clip-rule="evenodd" fill-rule="evenodd" d="M5.752 12A13.07 13.07 0 008 14.248v4.002c0 .414.336.75.75.75a5 5 0 004.797-6.414 12.984 12.984 0 005.45-10.848.75.75 0 00-.735-.735 12.984 12.984 0 00-10.849 5.45A5 5 0 001 11.25c.001.414.337.75.751.75h4.002zM13 9a2 2 0 100-4 2 2 0 000 4z"></path>
+                      </svg>
+                      Tips to grow
                     </div>
-                    <!-- Modal footer -->
-                    <div class="items-center p-6 border-t border-gray-200 rounded-b dark:border-gray-700">
-                        <button class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" type="submit">Save all</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Add User Modal -->
-    <div class="fixed left-0 right-0 z-50 items-center justify-center hidden overflow-x-hidden overflow-y-auto top-4 md:inset-0 h-modal sm:h-full" id="add-user-modal">
-        <div class="relative w-full h-full max-w-2xl px-4 md:h-auto">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-800">
-                <!-- Modal header -->
-                <div class="flex items-start justify-between p-5 border-b rounded-t dark:border-gray-700">
-                    <h3 class="text-xl font-semibold dark:text-white">
-                        Add new user
-                    </h3>
-                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-700 dark:hover:text-white" data-modal-toggle="add-user-modal">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
-                    </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-6 space-y-6">
-                    <form action="#">
-                        <div class="grid grid-cols-6 gap-6">
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First Name</label>
-                                <input type="text" name="first-name" id="first-name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Bonnie" required>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Last Name</label>
-                                <input type="text" name="last-name" id="last-name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Green" required>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email</label>
-                                <input type="email" name="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="example@company.com" required>
-                            </div>
-                            <div class="col-span-6 sm:col-span-3">
-                                <label for="position" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Position</label>
-                                <input type="text" name="position" id="position" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="e.g. React developer" required>
-                            </div>
-                            <div class="col-span-6">
-                                <label for="biography" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Biography</label>
-                                <textarea id="biography" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="👨‍💻Full-stack web developer. Open-source contributor."></textarea>
-                            </div>
-                        </div> 
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="items-center p-6 border-t border-gray-200 rounded-b dark:border-gray-700">
-                        <button class="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" type="submit">Add user</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Delete User Modal -->
-    <div class="fixed left-0 right-0 z-50 items-center justify-center hidden overflow-x-hidden overflow-y-auto top-4 md:inset-0 h-modal sm:h-full" id="delete-user-modal">
-        <div class="relative w-full h-full max-w-md px-4 md:h-auto">
-            <!-- Modal content -->
-            <div class="relative bg-white rounded-lg shadow dark:bg-gray-800">
-                <!-- Modal header -->
-                <div class="flex justify-end p-2">
-                    <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-700 dark:hover:text-white" data-modal-hide="delete-user-modal">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  
-                    </button>
-                </div>
-                <!-- Modal body -->
-                <div class="p-6 pt-0 text-center">
-                    <svg class="w-16 h-16 mx-auto text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <h3 class="mt-5 mb-6 text-lg text-gray-500 dark:text-gray-400">Are you sure you want to delete this user?</h3>
-                    <a href="#" class="text-white bg-red-600 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-base inline-flex items-center px-3 py-2.5 text-center mr-2 dark:focus:ring-red-800">
-                        Yes, I'm sure
+                    <p class="mb-4 text-gray-500 dark:text-gray-400">Marketing, sales & business growth for small business. Improve your marketing & promotion results - and grow your sales!</p>
+                    <p class="mb-4 text-lg font-medium text-gray-900 dark:text-white">What you'll learn:</p>
+                    <ul role="list" class="pl-2 mb-4 space-y-3 text-gray-500 list-disc dark:text-gray-400">
+                      <li class="flex space-x-2">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"></path>
+                          </svg>
+                          <span class="leading-tight">Dynamic reports and dashboards</span>
+                      </li>
+                      <li class="flex space-x-2">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"></path>
+                          </svg>
+                          <span class="leading-tight">Learn from competitors about what to do, and not to do</span>
+                      </li>
+                      <li class="flex space-x-2">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"></path>
+                          </svg>
+                          <span class="leading-tight">Take their business to the next level</span>
+                      </li>
+                      <li class="flex space-x-2">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"></path>
+                          </svg>
+                          <span class="leading-tight">Limitless business automation</span>
+                      </li>
+                      <li class="flex space-x-2">
+                          <!-- Icon -->
+                          <svg class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path clip-rule="evenodd" fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"></path>
+                          </svg>
+                          <span class="leading-tight">Build relationships with other businesses to co-promote</span>
+                      </li>
+                      <li class="flex space-x-2">
+                        <!-- Icon -->
+                        <svg class="flex-shrink-0 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                          <path clip-rule="evenodd" fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"></path>
+                        </svg>
+                        <span class="leading-tight">Make their customers feel loved and apprecaited</span>
+                      </li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center p-2 font-medium rounded-lg text-primary-700 hover:bg-gray-100 dark:text-primary-500 dark:hover:bg-gray-700">
+                      Let's start
+                      <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path clip-rule="evenodd" fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"></path>
+                      </svg>
                     </a>
-                    <a href="#" class="text-gray-900 bg-white hover:bg-gray-100 focus:ring-4 focus:ring-primary-300 border border-gray-200 font-medium inline-flex items-center rounded-lg text-base px-3 py-2.5 text-center dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700" data-modal-hide="delete-user-modal">
-                        No, cancel
-                    </a>
-                </div>
+                  </div>
+                  <div class="hidden duration-700 ease-in-out bg-white dark:bg-gray-800" data-carousel-item> 
+                    <div class="flex items-center mb-4 text-lg font-medium text-purple-600">
+                      <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path clip-rule="evenodd" fill-rule="evenodd" d="M13.5 4.938a7 7 0 11-9.006 1.737c.202-.257.59-.218.793.039.278.352.594.672.943.954.332.269.786-.049.773-.476a5.977 5.977 0 01.572-2.759 6.026 6.026 0 012.486-2.665c.247-.14.55-.016.677.238A6.967 6.967 0 0013.5 4.938zM14 12a4 4 0 01-4 4c-1.913 0-3.52-1.398-3.91-3.182-.093-.429.44-.643.814-.413a4.043 4.043 0 001.601.564c.303.038.531-.24.51-.544a5.975 5.975 0 011.315-4.192.447.447 0 01.431-.16A4.001 4.001 0 0114 12z"></path>
+                      </svg>
+                      Features
+                    </div>
+                    <h3 class="mb-4 text-2xl font-medium text-gray-900 dark:text-white">Go next level with Flowbite</h3>
+                    <p class="text-gray-500 dark:text-gray-400">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.</p>
+                    <!-- List -->
+                    <ul role="list" class="pl-2 my-5 mb-4 space-y-3 text-gray-500 list-disc dark:text-gray-400">
+                        <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-600 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="leading-tight">Dynamic reports and dashboards</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-600 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="leading-tight">Templates for everyone</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-600 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="leading-tight">Development workflow</span>
+                        </li>
+                        <li class="flex space-x-3">
+                            <!-- Icon -->
+                            <svg class="flex-shrink-0 w-5 h-5 text-purple-600 dark:text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span class="leading-tight">Limitless business automation</span>
+                        </li>
+                    </ul>
+                    <button type="button" class="inline-flex items-center px-3 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                      View more
+                      <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path clip-rule="evenodd" fill-rule="evenodd" d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"></path>
+                      </svg>
+                    </button>
+                  </div>
+              </div>
+              <div class="flex items-center justify-center">
+                  <button type="button" class="flex items-center justify-center h-full mr-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                      <span class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                          <span class="hidden">Previous</span>
+                      </span>
+                  </button>
+                  <button type="button" class="flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                      <span class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                          <span class="hidden">Next</span>
+                      </span>
+                  </button>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 sm:p-6 dark:bg-gray-800">
+          <!-- Card header -->
+          <div class="items-center justify-between lg:flex">
+            <div class="mb-4 lg:mb-0">
+              <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white">Evaluaciones</h3>
+            </div>
+            <div class="items-center sm:flex">
+              <div class="flex items-center">
+                <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+                  class="mb-4 sm:mb-0 mr-4 inline-flex items-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-4 py-2.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+                  type="button">
+                  Filtrar por Estado
+                  <svg class="w-4 h-4 ml-2" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdown" class="z-10 hidden w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
+                  <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">
+                    Categoría
+                  </h6>
+                  <ul class="space-y-2 text-sm" aria-labelledby="dropdownDefault">
+                    <li class="flex items-center">
+                      <input id="apple" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+              
+                      <label for="apple" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+                        Completadaqs (56)
+                      </label>
+                    </li>
+              
+                    <li class="flex items-center">
+                      <input id="fitbit" type="checkbox" value="" checked class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+              
+                      <label for="fitbit" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+                        Canceladas (56)
+                      </label>
+                    </li>
+              
+                    <li class="flex items-center">
+                      <input id="dell" type="checkbox" value="" class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+              
+                      <label for="dell" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+                        En Proceso (56)
+                      </label>
+                    </li>
+              
+                    <li class="flex items-center">
+                      <input id="asus" type="checkbox" value="" checked class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+              
+                      <label for="asus" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+                        Revisando (97)
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div date-rangepicker class="flex items-center space-x-4">
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M5.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H6a.75.75 0 01-.75-.75V12zM6 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H6zM7.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H8a.75.75 0 01-.75-.75V12zM8 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H8zM9.25 10a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H10a.75.75 0 01-.75-.75V10zM10 11.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V12a.75.75 0 00-.75-.75H10zM9.25 14a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H10a.75.75 0 01-.75-.75V14zM12 9.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V10a.75.75 0 00-.75-.75H12zM11.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75V12zM12 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H12zM13.25 10a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H14a.75.75 0 01-.75-.75V10zM14 11.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V12a.75.75 0 00-.75-.75H14z"></path>
+                      <path clip-rule="evenodd" fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z"></path>
+                    </svg>
+                  </div>
+                  <input name="start" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="From">
+                </div>
+                <div class="relative">
+                  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M5.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H6a.75.75 0 01-.75-.75V12zM6 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H6zM7.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H8a.75.75 0 01-.75-.75V12zM8 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H8zM9.25 10a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H10a.75.75 0 01-.75-.75V10zM10 11.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V12a.75.75 0 00-.75-.75H10zM9.25 14a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H10a.75.75 0 01-.75-.75V14zM12 9.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V10a.75.75 0 00-.75-.75H12zM11.25 12a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H12a.75.75 0 01-.75-.75V12zM12 13.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V14a.75.75 0 00-.75-.75H12zM13.25 10a.75.75 0 01.75-.75h.01a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75H14a.75.75 0 01-.75-.75V10zM14 11.25a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75h.01a.75.75 0 00.75-.75V12a.75.75 0 00-.75-.75H14z"></path>
+                      <path clip-rule="evenodd" fill-rule="evenodd" d="M5.75 2a.75.75 0 01.75.75V4h7V2.75a.75.75 0 011.5 0V4h.25A2.75 2.75 0 0118 6.75v8.5A2.75 2.75 0 0115.25 18H4.75A2.75 2.75 0 012 15.25v-8.5A2.75 2.75 0 014.75 4H5V2.75A.75.75 0 015.75 2zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75z"></path>
+                    </svg>
+                  </div>
+                  <input name="end" type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="To">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Table -->
+          <div class="flex flex-col mt-6">
+            <div class="overflow-x-auto rounded-lg">
+              <div class="inline-block min-w-full align-middle">
+                <div class="overflow-hidden shadow sm:rounded-lg">
+                  <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
+                    <thead class="bg-gray-50 dark:bg-gray-700">
+                      <tr>
+                        <th scope="col" class="p-4 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-white">
+                          Evaluación
+                        </th>
+                        <th scope="col" class="p-4 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-white">
+                          Fecha
+                        </th>
+                        <th scope="col" class="p-4 text-xs font-medium tracking-wider text-left text-gray-500 uppercase dark:text-white">
+                          Estado
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white dark:bg-gray-800">
+                      <tr>
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Bonnie Green</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Apr 23 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span
+                            class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border border-green-100 dark:border-green-500">Completed</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"> <span class="font-semibold">Neil Sims</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Apr 23 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border border-green-100 dark:border-green-500">Completed</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Roberta Casas</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Apr 18 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span
+                            class="bg-red-100 text-red-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-red-100 dark:border-red-400 dark:bg-gray-700 dark:text-red-400">Cancelled</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Lana Byrd</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Apr 15 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-purple-100 dark:bg-gray-700 dark:border-purple-500 dark:text-purple-400">In progress</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Jese Leos</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Apr 15 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border border-green-100 dark:border-green-500">Completed</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Roberto Casas</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Apr 11 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span class="bg-orange-100 text-orange-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-orange-100 dark:bg-gray-700 dark:border-orange-300 dark:text-orange-300">In review</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Lana Lysle</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Apr 6 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span class="bg-orange-100 text-orange-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-orange-100 dark:bg-gray-700 dark:border-orange-300 dark:text-orange-300">In review</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Joseph Mcfall</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Apr 1 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border border-green-100 dark:border-green-500">Completed</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Neil Sims</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Mar 23 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span class="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md border border-purple-100 dark:bg-gray-700 dark:border-purple-500 dark:text-purple-400">In progress</span>
+                        </td>
+                      </tr>
+                      <tr class="bg-gray-50 dark:bg-gray-700">
+                        <td class="p-4 text-sm font-normal text-gray-900 whitespace-nowrap dark:text-white"><span class="font-semibold">Bonnie Green</span>
+                        </td>
+                        <td class="p-4 text-sm font-normal text-gray-500 whitespace-nowrap dark:text-gray-400">
+                          Mar 23 ,2021
+                        </td>
+                        <td class="p-4 whitespace-nowrap">
+                          <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 border border-green-100 dark:border-green-500">Completed</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card Footer -->
+          <div class="flex items-center justify-between pt-3 sm:pt-6">
+            <div>
+              <button class="inline-flex items-center p-2 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-900 dark:text-gray-400 dark:hover:text-white" type="button" data-dropdown-toggle="transactions-dropdown">Last 7 days <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+              <!-- Dropdown menu -->
+              <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700 dark:divide-gray-600" id="transactions-dropdown">
+                  <div class="px-4 py-3" role="none">
+                    <p class="text-sm font-medium text-gray-900 truncate dark:text-white" role="none">
+                      Sep 16, 2021 - Sep 22, 2021
+                    </p>
+                  </div>
+                  <ul class="py-1" role="none">
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Yesterday</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Today</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Last 7 days</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Last 30 days</a>
+                    </li>
+                    <li>
+                      <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Last 90 days</a>
+                    </li>
+                  </ul>
+                  <div class="py-1" role="none">
+                    <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white" role="menuitem">Custom...</a>
+                  </div>
+              </div>
+            </div>
+            <div class="flex-shrink-0">
+              <a href="#" class="inline-flex items-center p-2 text-xs font-medium uppercase rounded-lg text-primary-700 sm:text-sm hover:bg-gray-100 dark:text-primary-500 dark:hover:bg-gray-700">
+               Transactions Report
+                <svg class="w-4 h-4 ml-1 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+              </a>
+            </div>
+          </div>
         </div>
     </div>
